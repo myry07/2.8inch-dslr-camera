@@ -1,0 +1,39 @@
+CMake Error at /Users/wangjiaqi/esp/esp-idf/tools/cmake/component.cmake:228 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /Users/wangjiaqi/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  /Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/components/cst816t/CMakeLists.txt:3:
+
+
+    Parse error.  Expected a command name, got right paren with text ")".
+
+  Call Stack (most recent call first):
+
+    /Users/wangjiaqi/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /Users/wangjiaqi/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/build.cmake:644 (__component_get_requirements)
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/project.cmake:717 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
