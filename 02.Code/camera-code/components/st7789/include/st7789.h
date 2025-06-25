@@ -4,15 +4,6 @@
 #include "driver/spi_master.h"
 #include "fontx.h"
 
-#define LCD_WIDTH  240
-#define LCD_HEIGHT 280
-#define SPI_MOSI_GPIO 47
-#define SPI_SCLK_GPIO 21
-#define SPI_CS_GPIO 14
-#define LCD_DC_GPIO 13
-#define LCD_RESET_GPIO 12
-#define LCD_BL_GPIO 1
-
 #define rgb565(r, g, b) (((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3))
 
 #define RED    rgb565(255,   0,   0) // 0xf800
@@ -25,7 +16,7 @@
 #define CYAN   rgb565(  0, 156, 209) // 0x04FA
 #define PURPLE rgb565(128,   0, 128) // 0x8010
 
-typedef enum {DIRECTION0, DIRECTION90, DIRECTION180, DIRECTION270} DIRECTION;
+typedef enum {DIRECTION0 = 0, DIRECTION90, DIRECTION180, DIRECTION270} DIRECTION;
 
 typedef enum {
 	SCROLL_RIGHT = 1,
@@ -62,7 +53,7 @@ bool spi_master_write_color(TFT_t * dev, uint16_t color, uint16_t size);
 bool spi_master_write_colors(TFT_t * dev, uint16_t * colors, uint16_t size);
 
 void delayMS(int ms);
-void lcdInit(TFT_t * dev, int width, int height, int offsetx, int offsety);
+void lcdInit(TFT_t * dev, int width, int height, int offsetx, int offsety, DIRECTION dir);
 void lcdDrawPixel(TFT_t * dev, uint16_t x, uint16_t y, uint16_t color);
 void lcdDrawMultiPixels(TFT_t * dev, uint16_t x, uint16_t y, uint16_t size, uint16_t * colors);
 void lcdDrawFillRect(TFT_t * dev, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t color);

@@ -85,4 +85,6 @@
 /Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/st7789/libst7789.a
 /Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/cst816t/libcst816t.a
+/Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/cst816s/libcst816s.a
+/Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/adapter_lcd/libadapter_lcd.a
 /Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/main/libmain.a

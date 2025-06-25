@@ -564,6 +564,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/cst816s/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/adapter_lcd/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/wangjiaqi/Documents/Github/2.8inch-dslr-camera/02.Code/camera-code/build/esp-idf/main/cmake_install.cmake")
 endif()
 
